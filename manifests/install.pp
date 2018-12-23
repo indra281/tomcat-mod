@@ -1,6 +1,6 @@
-class::install {
+class tomcat::install {
 
-package { ['tomcat', 'tomcat-webapps']:
+package {['tomcat', 'tomcat-webapps']:
 
 ensure => installed,
 

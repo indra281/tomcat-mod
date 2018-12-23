@@ -1,4 +1,4 @@
-class::service {
+class tomcat::service {
 
 service {'tomcat':
 start => true,
