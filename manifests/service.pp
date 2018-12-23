@@ -1,4 +1,4 @@
-class tomcat::service inherits variable {
+class tomcat::service inherits tomcat {
 
 service {'tomcat':
 ensure => $::tomcat::service_status,

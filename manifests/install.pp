@@ -1,4 +1,4 @@
-class tomcat::install inherits variable {
+class tomcat::install inherits tomcat {
 
 package { $::tocat::packages:
 
