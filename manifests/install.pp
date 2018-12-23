@@ -1,6 +1,6 @@
 class tomcat::install inherits tomcat {
 
-package { $::tocat::packages:
+package { $::tomcat::packages:
 
 ensure => $::tomcat::service_status,
 
