@@ -10,7 +10,7 @@ file { '/etc/tomcat/tomcat.conf':
 ensure => present,
 mode => '0777',
 source => 'puppet:///modules/tomcat/files/tomcat',
-notify => service['tomcat'],
+notify => Service['tomcat'],
 
 }
 
