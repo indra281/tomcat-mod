@@ -1,7 +1,7 @@
 class tomcat::service {
 
 service {'tomcat':
-start => true,
+start => running,
 enable => true,
 
 
