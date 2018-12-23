@@ -1,8 +1,8 @@
-class tomcat::install {
+class tomcat::install inherits variable {
 
-package {['tomcat', 'tomcat-webapps']:
+package { $::tocat::packages:
 
-ensure => installed,
+ensure => $::tomcat::service_status,
 
 
 }

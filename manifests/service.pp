@@ -1,14 +1,14 @@
-class tomcat::service {
+class tomcat::service inherits variable {
 
 service {'tomcat':
-ensure => running,
+ensure => $::tomcat::service_status,
 enable => true,
 
 }
 
-file { '/etc/tomcat/tomcat.conf':
+file { $::tomcat::config_path:
 ensure => present,
-mode => '0777',
+mode => $::tomcat::mode,
 source => 'puppet:///modules/tomcat/tomcat.conf',
 notify => Service['tomcat'],
 

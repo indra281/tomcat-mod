@@ -42,7 +42,7 @@
 #
 # Copyright 2018 Your name here, unless otherwise noted.
 #
-class tomcat {
+class tomcat inherits tomcat::variable {
 
   include tomcat::install
   include tomcat::service
